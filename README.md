@@ -6,4 +6,6 @@ git clone https://github.com/mountain720/SafecoinValidator
 
 cd SafecoinValidator
 
+chmod +x safecoin.sh
+
 ./safecoin.sh
