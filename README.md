@@ -28,3 +28,5 @@ solana-keygen new -o ~/SafecoinValidator/validator-keypair.json
 solana config set --keypair ~/SafecoinValidator/validator-keypair.json
 
 solana-keygen new -o ~/SafecoinValidator/vote-account-keypair.json
+
+# You can always visit Solana's validator guide for further info:  https://docs.solana.com/running-validator
