@@ -9,3 +9,9 @@ cd SafecoinValidator
 chmod +x safecoin.sh
 
 ./safecoin.sh
+
+# The above gets the dependencies installed.  You must reboot the machine now. Next, connect the validator to the SafeCoin mainnet, and start the server:
+
+chmod +x safecoin2.sh
+
+./safecoin2.sh
