@@ -10,10 +10,23 @@ chmod +x safecoin.sh
 
 ./safecoin.sh
 
-# The above gets the dependencies installed.  You must reboot the machine now. Next, connect the validator to the SafeCoin mainnet, and start the server:
+# The above gets the dependencies installed.  You must reboot the machine now. Type these commands now to configure:
 
 cd SafecoinValidator
 
-chmod +x safecoin2.sh
+solana config set --url https://api.mainnet.safecoin.org
 
-./safecoin2.sh
+sudo solana-sys-tuner --user $(whoami) > sys-tuner.log 2>&1 &
+
+sudo sysctl -w vm.max_map_count=500000
+
+
+# Now, you'll have to manually type or copy/paste these keygen commands in, as you're supposed to make a note of the key seed, and password here:
+
+cd SAFE
+
+solana-keygen new -o ~/validator-keypair.json
+
+solana config set --keypair ~/validator-keypair.json
+
+solana-keygen new -o ~/vote-account-keypair.json
