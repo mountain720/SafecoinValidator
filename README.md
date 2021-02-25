@@ -23,8 +23,8 @@ sudo sysctl -w vm.max_map_count=500000
 
 # Now, you'll have to manually type or copy/paste these keygen commands in, as you're supposed to make a note of the key seed, and password here:
 
-solana-keygen new -o ~/validator-keypair.json
+solana-keygen new -o ~/SafecoinValidator/validator-keypair.json
 
-solana config set --keypair ~/validator-keypair.json
+solana config set --keypair ~/SafecoinValidator/validator-keypair.json
 
-solana-keygen new -o ~/vote-account-keypair.json
+solana-keygen new -o ~/SafecoinValidator/vote-account-keypair.json
