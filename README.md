@@ -1,6 +1,6 @@
 # SafecoinValidator
 
-Shell script to get a SafeCoin validator node going.  From a ubuntu command line, type:
+Shell script to get a SafeCoin validator node going.  From an Ubuntu 20.04 command line, type:
 
 git clone https://github.com/mountain720/SafecoinValidator/safecoin.sh
 ./safecoin.sh
